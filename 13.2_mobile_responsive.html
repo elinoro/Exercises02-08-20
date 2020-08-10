@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Responsive</title>
+    <style>
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      .boxes {
+        width: 100%;
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+      }
+
+      .box {
+        height: 250px;
+        width: 250px;
+        float: left;
+        border: 2px black solid;
+        margin: 20px;
+      }
+
+      /*normal*/
+      @media(min-width: 769px) and (max-width: 1200px){
+        .box {
+        height: 150px;
+        width: 150px;
+        float: left;
+        border: 2px black solid;
+        padding: 5px;
+        font-size: 10px;
+        margin: 5px;
+        }
+      }
+
+      /*tablet*/
+      @media(min-width: 501px) and (max-width: 768px){
+        .box {
+        height: 250px;
+        width: 250px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        }
+      }
+        /*smartphone*/
+        @media only screen and (max-width: 500px){    
+        .box {
+        height: 120px;
+        width: 120px;
+        float: none;
+        border: 2px black solid;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        font-size: 8px;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum suscipit,
+        cupiditate rerum unde, non quia inventore dignissimos cum amet libero
+        ipsum sunt dicta! Asperiores, consequuntur magnam fugit sint possimus
+        voluptatibus dolores nobis iure officiis doloribus eius corrupti
+        reprehenderit in voluptate voluptates qui porro vitae ea nulla cumque
+        unde quaerat sunt?
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum suscipit,
+        cupiditate rerum unde, non quia inventore dignissimos cum amet libero
+        ipsum sunt dicta! Asperiores, consequuntur magnam fugit sint possimus
+        voluptatibus dolores nobis iure officiis doloribus eius corrupti
+        reprehenderit in voluptate voluptates qui porro vitae ea nulla cumque
+        unde quaerat sunt?
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum suscipit,
+        cupiditate rerum unde, non quia inventore dignissimos cum amet libero
+        ipsum sunt dicta! Asperiores, consequuntur magnam fugit sint possimus
+        voluptatibus dolores nobis iure officiis doloribus eius corrupti
+        reprehenderit in voluptate voluptates qui porro vitae ea nulla cumque
+        unde quaerat sunt?
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum suscipit,
+        cupiditate rerum unde, non quia inventore dignissimos cum amet libero
+        ipsum sunt dicta! Asperiores, consequuntur magnam fugit sint possimus
+        voluptatibus dolores nobis iure officiis doloribus eius corrupti
+        reprehenderit in voluptate voluptates qui porro vitae ea nulla cumque
+        unde quaerat sunt?
+      </div>
+    </div>
+  </body>
+</html>
